@@ -1,32 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f40324a5-f565-4cff-83f5-77881ac1c89f" name="Changes" comment="revorking to react">
-      <change afterPath="$PROJECT_DIR$/.idea/jsonCatalog.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/container/About/About.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/container/About/About.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/container/Awards/Awards.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/container/Awards/Awards.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/container/Footer/Footer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/container/Footer/Footer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/container/Header/Header.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/container/Header/Header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/container/Skills/Skills.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/container/Skills/Skills.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/container/Work/Work.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/container/Work/Work.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/container/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-    </list>
+    <list default="true" id="f40324a5-f565-4cff-83f5-77881ac1c89f" name="Changes" comment="file structure done + removed crappy font" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,7 +76,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1645249561125</updated>
-      <workItem from="1645249562445" duration="2423000" />
+      <workItem from="1645249562445" duration="2557000" />
     </task>
     <task id="LOCAL-00001" summary="revorking to react">
       <created>1645249830701</created>
@@ -110,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645249830701</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="file structure done + removed crappy font">
+      <created>1645252074463</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1645252074463</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,7 +112,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="revorking to react" />
-    <option name="LAST_COMMIT_MESSAGE" value="revorking to react" />
+    <MESSAGE value="file structure done + removed crappy font" />
+    <option name="LAST_COMMIT_MESSAGE" value="file structure done + removed crappy font" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
