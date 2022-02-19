@@ -1,4 +1,4 @@
 # Project exclude paths
 /studio/node_modules/
-/web/.next/
-/web/node_modules/
+.next/
+node_modules/
