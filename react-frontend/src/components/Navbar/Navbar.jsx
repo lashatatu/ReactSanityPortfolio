@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import "./Navbar.scss";
-import { images } from "../../constants";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
+
+import { images } from "../../constants";
+import "./Navbar.scss";
 
 const Navbar = () => {
 	const [toggle, setToggle] = useState(false);
@@ -25,8 +26,9 @@ const Navbar = () => {
 				 {
 						toggle && (
 							 <motion.div whileInView={{x: [300, 0]}} transition={{duration: 0.85, ease: "easeOut"}}>
+								 <HiX onClick={() => setToggle(false)}/>
+
 								 <ul>
-									 <HiX onClick={() => setToggle(false)}/>
 									 {["home", "about", "work", "skills", "contact"].map(item => (
 											<li key={item}>
 												<a href={`#${item}`} onClick={() => setToggle(false)}>{item}</a>
@@ -36,7 +38,6 @@ const Navbar = () => {
 							 </motion.div>
 						)
 				 }
-
 			 </div>
 		 </nav>
 	);
