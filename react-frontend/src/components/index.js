@@ -1,3 +1,9 @@
-export {default as Navbar} from './Navbar/Navbar';
+import Navbar from "./Navbar/Navbar";
+import NavigationDots from "./NavigationDots";
+import SocialMedia from "./SocialMedia";
 
-// well this was a lot of work
+export {
+	Navbar,
+	NavigationDots,
+	SocialMedia,
+};
