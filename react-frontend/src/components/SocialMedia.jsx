@@ -1,15 +1,14 @@
 import React from "react";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
-import { FaFacebookF } from "react-icons/fa";
 
 const SocialMedia = () => {
 	return (
 		 <div className={"app__social"}>
-			 <div>
+			 <div onClick={()=> window.open("https://www.linkedin.com/in/lashatatu/", "_blank")}>
 				 <BsLinkedin/>
 			 </div>
-			 <div>
-				 <BsGithub/>
+			 <div onClick={()=> window.open("https://github.com/lashatatu", "_blank")}>
+				 <BsGithub />
 			 </div>
 		 </div>
 	);

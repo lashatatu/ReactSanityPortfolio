@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 
 import { images } from "../../constants";
 import "./Navbar.scss";
+import SocialMedia from "../SocialMedia";
 
 const Navbar = () => {
 	const [toggle, setToggle] = useState(false);
@@ -39,6 +40,7 @@ const Navbar = () => {
 						)
 				 }
 			 </div>
+			 <SocialMedia className={"app__social"}/>
 		 </nav>
 	);
 };
