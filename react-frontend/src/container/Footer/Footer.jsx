@@ -57,7 +57,7 @@ const Footer = () => {
 					</div>
 					<div>
 					 <textarea
-							className={"p-text"} placeholder={"Your message"} name={message} value={message}
+							className={"p-text"} placeholder={"Your message"} name={'message'} value={message}
 							onChange={handleChangeInput} id="" cols="30" rows="10"/>
 					</div>
 					<button type={"button"} className={"p-text"} onClick={handleSubmit}>
