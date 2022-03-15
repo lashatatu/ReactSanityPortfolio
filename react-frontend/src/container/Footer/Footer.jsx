@@ -21,7 +21,7 @@ const Footer = () => {
 		e.preventDefault();
 		setLoading(true);
 
-		emailjs.sendForm('service_0dcc2fb', 'template_g9t9aoh', form.current, 'Zdks7nlmhlgTbQdw0')
+		emailjs.sendForm(process.env.YOUR_SERVICE_ID_EMAIL_JS, process.env.YOUR_TEMPLATE_ID_EMAIL_JS, form.current, process.env.YOUR_USER_ID_EMAIL_JS)
 		.then((result) => {
 			setLoading(false);
 			setIsFormSubmitted(true);
