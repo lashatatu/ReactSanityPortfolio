@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState ,useRef} from "react";
 import { images } from "../../constants";
 import { AppWrap, MotionWrap } from "../../wrapper";
-import { client } from "../../client";
+import emailjs from "emailjs-com";
 import "./Footer.scss";
 
 const Footer = () => {
@@ -15,20 +15,22 @@ const Footer = () => {
 		setFormData({...formData, [name]: value});
 	};
 
-	const handleSubmit = () => {
-		setLoading(true);
-		const contact = {
-			_type: "contact",
-			name: name,
-			email: email,
-			message: message,
-		};
+	const form = useRef();
 
-		client.create(contact).then(() => {
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		setLoading(true);
+
+		emailjs.sendForm('service_0dcc2fb', 'template_g9t9aoh', form.current, 'Zdks7nlmhlgTbQdw0')
+		.then((result) => {
 			setLoading(false);
 			setIsFormSubmitted(true);
+			console.log(result.text);
+		}, (error) => {
+			console.log(error.text);
 		});
 	};
+
 	return (
 		 <>
 			 <h2 className={"head-text"}>Take a Coffee and Chat with me</h2>
@@ -44,7 +46,7 @@ const Footer = () => {
 			 </div>
 
 			 {!isFormSubmitted ?
-				<div className={"app__footer-form app__flex"}>
+				<form ref={form} className={"app__footer-form app__flex"}>
 					<div className={"app__flex"}>
 						<input
 							 type="text" className={"p-text"} placeholder={"Your Name"} name={"name"} value={name}
@@ -67,7 +69,7 @@ const Footer = () => {
 							: "Send Message"
 						}
 					</button>
-				</div>
+				</form>
 												 :
 				<div>
 					<h3 className={"head-text"}>Thank you for getting in touch!</h3>
