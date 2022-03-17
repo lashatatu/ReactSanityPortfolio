@@ -53,7 +53,7 @@ const Awards = () => {
 									<h5 className={"p-text"}>{awar.company}</h5>
 								</div>
 							</div>
-							<img src={urlFor(awar.imageurl)} alt={awar.name}/>
+							<img src={urlFor(awar.imageurl).width(800)} alt={awar.name}/>
 						</div>
 					</>
 			 )}
@@ -65,7 +65,7 @@ const Awards = () => {
 							 transition={{duration: 0.5, type: "tween"}}
 							 key={brand._id}
 						>
-							<img src={urlFor(brand.imgUrl)} alt={brand.name}/>
+							<img src={urlFor(brand.imgUrl).width(150)} alt={brand.name}/>
 						</motion.div>
 				 ))}
 			 </div>
