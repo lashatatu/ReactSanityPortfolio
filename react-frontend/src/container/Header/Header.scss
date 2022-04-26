@@ -183,8 +183,8 @@
   }
 }
 
-.app__header-img{
-  flex:1;
+.app__header-img {
+  flex: 1;
   height: 100%;
 
   display: flex;
@@ -192,23 +192,41 @@
   align-items: flex-end;
   position: relative;
 
-  img{
+  img {
     width: 100%;
     object-fit: contain;
     z-index: 1;
   }
-  .overlay_circle{
+
+  .overlay_circle {
     position: absolute;
-    left:0;
-    right:0;
+    left: 0;
+    right: 0;
     bottom: 0;
     z-index: 0;
     width: 100%;
     height: 90%;
   }
 
-  @media screen and (max-width: 1200px){
+  @media screen and (max-width: 1200px) {
     margin: 2rem 0;
+  }
+}
+
+.text__background-picture:hover {
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: url('../../assets/ukraine-flag.png');
+  background-size: contain;
+  color: transparent;
+  h1{
+    color: transparent;
+  }
+  span{
+    color: black;
+  }
+  p{
+    color: transparent;
   }
 }
 

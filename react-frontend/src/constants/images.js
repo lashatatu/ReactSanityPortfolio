@@ -40,7 +40,10 @@ import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
 
+import ukraineFlag from '../assets/ukraine-flag.png';
+
 export default {
+	ukraineFlag,
 	email,
 	mobile,
 	api,
