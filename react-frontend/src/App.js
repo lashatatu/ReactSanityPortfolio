@@ -1,20 +1,20 @@
-import React from "react";
-import { About, Awards, Footer, Header, Skills, Work } from "./container";
-import { Navbar } from "./components";
+import React from 'react';
 import './App.scss';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Uses from './route/Uses';
+import LTRoutes from './route/LTRoutes';
 
 const App = () => {
-	return (
-		 <div className={"app"}>
-			 <Navbar/>
-			 <Header/>
-			 <About/>
-			 <Work/>
-			 <Skills/>
-			 <Awards/>
-			 <Footer/>
-		 </div>
-	);
+  return (
+    <BrowserRouter>
+      <Switch>
+        <Route exact path={'/'} component={LTRoutes}/>
+      </Switch>
+      <Switch>
+        <Route path={'/uses'} component={Uses}/>
+      </Switch>
+    </BrowserRouter>
+  );
 };
 
 export default App;
