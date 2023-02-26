@@ -78,7 +78,7 @@
 
   span {
     font-size: 2.5rem;
-    @media screen and(min-width: 2000px) {
+    @media screen and (min-width: 2000px) {
       font-size: 5rem;
     }
   }
@@ -219,13 +219,16 @@
   background-image: url('../../assets/ukraine-flag.png');
   background-size: contain;
   color: transparent;
-  h1{
+
+  h1 {
     color: transparent;
   }
-  span{
+
+  span {
     color: black;
   }
-  p{
+
+  p {
     color: transparent;
   }
 }
