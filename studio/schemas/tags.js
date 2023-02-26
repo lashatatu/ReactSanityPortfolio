@@ -9,6 +9,11 @@ export default {
       type: "string",
     },
     {
+      name: "description",
+      title: "Description",
+      type: "string",
+    },
+    {
       name: "icon",
       title: "Icon",
       type: "image",
@@ -18,5 +23,3 @@ export default {
     },
   ],
 };
-
-//com
